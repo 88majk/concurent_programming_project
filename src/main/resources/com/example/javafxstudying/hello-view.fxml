@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.25314685314685315" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxstudying.HelloController">
+  <items>
+    <AnchorPane fx:id="propertiesPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label layoutX="90.0" layoutY="5.0" text="Ustawienia">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button fx:id="startButton" layoutX="15.0" layoutY="559.0" mnemonicParsing="false" onAction="#startAnimation" prefHeight="25.0" prefWidth="66.0" text="Start" />
+            <Button fx:id="stopButton" layoutX="97.0" layoutY="559.0" mnemonicParsing="false" onAction="#respasAnimation" prefHeight="25.0" prefWidth="66.0" text="Pauza" />
+            <Label layoutX="14.0" layoutY="53.0" text="Ilość kibiców" />
+            <TextField fx:id="ilosckibicowField" layoutX="97.0" layoutY="49.0" prefHeight="25.0" prefWidth="84.0" />
+            <Slider fx:id="speedSlider" layoutX="58.0" layoutY="126.0" majorTickUnit="200.0" min="-100.0" minorTickCount="100" onKeyReleased="#dostosujSzybkosc" onMouseReleased="#dostosujSzybkosc" showTickMarks="true" />
+            <Label layoutX="81.0" layoutY="100.0" text="Prędkość animacji" />
+            <Button fx:id="zakonczButton" layoutX="173.0" layoutY="559.0" mnemonicParsing="false" onAction="#zakonczAnimation" prefHeight="25.0" prefWidth="66.0" text="Zakończ" />
+            <Label layoutX="18.0" layoutY="246.0" prefHeight="17.0" prefWidth="224.0" text="Przedział czasowy kontroli na stanowisku" />
+            <TextField fx:id="minTimeField" layoutX="44.0" layoutY="299.0" prefHeight="25.0" prefWidth="66.0" />
+            <TextField fx:id="maxTimeField" layoutX="171.0" layoutY="299.0" prefHeight="25.0" prefWidth="66.0" />
+            <Label layoutX="13.0" layoutY="303.0" text="Min" />
+            <Label layoutX="138.0" layoutY="303.0" text="Max" />
+            <Button fx:id="saveButton" layoutX="71.0" layoutY="524.0" mnemonicParsing="false" onAction="#saveAnimation" text="Zapisz konfigurację" />
+            <Label layoutX="61.0" layoutY="168.0" text="Spowolnienie kolejki [ms]" />
+            <TextField fx:id="slowTextField" layoutX="95.0" layoutY="195.0" prefHeight="25.0" prefWidth="66.0" />
+            <Separator layoutX="28.0" layoutY="92.0" prefWidth="200.0" />
+            <Separator layoutX="25.0" layoutY="161.0" prefWidth="200.0" />
+            <Separator layoutX="23.0" layoutY="235.0" prefWidth="200.0" />
+            <Separator layoutX="25.0" layoutY="340.0" prefWidth="200.0" />
+            <Separator layoutX="25.0" layoutY="35.0" prefWidth="200.0" />
+            <Label layoutX="119.0" layoutY="263.0" text="[ms]" />
+            <ColorPicker fx:id="colorPickerA" layoutX="64.0" layoutY="384.0" />
+            <ColorPicker fx:id="colorPickerB" layoutX="64.0" layoutY="426.0" />
+            <Label layoutX="47.0" layoutY="349.0" text="Wybierz kolory dla obu drużyn" />
+            <Label layoutX="37.0" layoutY="385.0" text="A:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="428.0" text="B:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="30.0" layoutY="468.0" prefWidth="200.0" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="animationPane" />
+  </items>
+</SplitPane>
