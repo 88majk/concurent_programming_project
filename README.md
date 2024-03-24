@@ -1,2 +1,2 @@
-# projektPW
+# Concurent programming project
 The main task was to simulate and controll the stadium inspection of supporters of two teams on 3 gateways, using semaphores. Every supporter was a different process, which can be controlled in a gateway. The assumptions were limited capacity of each gateway and the restriction to controll supporters of only one team at the time. Everything was presented visually, by creating figures which were representing fans and gates in real time. Simulation run was controlled with GUI interface, allowing user to change parameters of events in sim.
